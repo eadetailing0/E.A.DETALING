@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E.A. Detailing</title>
+
+  <title>E.A. Detailing | Professionele Auto Detailing</title>
 
   <style>
     * {
@@ -20,18 +21,19 @@
       font-family: Arial, sans-serif;
       background: #0b0b0b;
       color: #fff;
+      line-height: 1.6;
     }
 
     header {
       background: #000;
       text-align: center;
-      padding: 30px 15px;
+      padding: 35px 15px;
       border-bottom: 2px solid #d4af37;
     }
 
     header h1 {
       color: #d4af37;
-      font-size: 38px;
+      font-size: 40px;
       letter-spacing: 2px;
     }
 
@@ -46,13 +48,13 @@
       text-align: center;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
     }
 
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 8px;
+      margin: 0 9px;
       font-weight: bold;
     }
 
@@ -61,12 +63,13 @@
     }
 
     .hero {
-      min-height: 480px;
+      min-height: 500px;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 40px 20px;
+
       background:
         linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
         url("IMG_9557.jpeg") center/cover no-repeat;
@@ -87,7 +90,7 @@
       display: inline-block;
       background: #d4af37;
       color: #000;
-      padding: 14px 24px;
+      padding: 14px 25px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
@@ -103,7 +106,7 @@
       color: #d4af37;
       text-align: center;
       font-size: 32px;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
 
     .cards {
@@ -131,9 +134,10 @@
       margin-top: 15px;
     }
 
+    /* FOTO'S */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 18px;
     }
 
@@ -146,6 +150,42 @@
       display: block;
     }
 
+    /* REVIEWS */
+    .review-info {
+      text-align: center;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .review-box {
+      background: #181818;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .stars {
+      color: #d4af37;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .review-box p {
+      color: #ddd;
+      font-style: italic;
+    }
+
+    .review-box small {
+      display: block;
+      margin-top: 12px;
+      color: #aaa;
+    }
+
+    /* CONTACT */
     .contact {
       background: #181818;
       border-radius: 15px;
@@ -172,6 +212,7 @@
     }
 
     @media (max-width: 600px) {
+
       header h1 {
         font-size: 29px;
       }
@@ -198,107 +239,212 @@
 
 <body>
 
+<!-- HEADER -->
 <header>
   <h1>E.A. DETAILING</h1>
   <p>Professionele auto detailing</p>
 </header>
 
+<!-- MENU -->
 <nav>
   <a href="#diensten">Diensten</a>
   <a href="#prijzen">Prijzen</a>
   <a href="#fotos">Foto's</a>
+  <a href="#reviews">Reviews</a>
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- STARTPAGINA -->
 <div class="hero">
   <div>
     <h2>Uw auto, als nieuw</h2>
     <p>Professionele reiniging van binnen en buiten.</p>
-    <a class="button" href="#contact">Afspraak maken</a>
+
+    <a class="button" href="#contact">
+      Afspraak maken
+    </a>
   </div>
 </div>
 
+<!-- DIENSTEN -->
 <section id="diensten">
+
   <h2>Onze diensten</h2>
 
   <div class="cards">
 
     <div class="card">
       <h3>Interieurreiniging</h3>
-      <p>Grondige reiniging van het interieur.</p>
+      <p>
+        Grondige reiniging van het interieur
+        van uw auto.
+      </p>
     </div>
 
     <div class="card">
       <h3>Complete reiniging</h3>
-      <p>Volledige behandeling van binnen en buiten.</p>
+      <p>
+        Volledige behandeling van binnen
+        en buiten.
+      </p>
     </div>
 
     <div class="card">
       <h3>SUV behandeling</h3>
-      <p>Speciale behandeling voor SUV's en grotere voertuigen.</p>
+      <p>
+        Speciale behandeling voor SUV's
+        en grotere voertuigen.
+      </p>
     </div>
 
     <div class="card">
       <h3>Camionetten</h3>
-      <p>Prijs op aanvraag.</p>
+      <p>
+        Voor camionetten maken wij
+        een prijs op aanvraag.
+      </p>
     </div>
 
   </div>
+
 </section>
 
+<!-- PRIJZEN -->
 <section id="prijzen">
-  <h2>Prijzen</h2>
+
+  <h2>Onze prijzen</h2>
 
   <div class="cards">
 
     <div class="card">
       <h3>Interieur</h3>
-      <p>Volledige interieurreiniging.</p>
-      <div class="price">€85</div>
+      <p>
+        Volledige interieurreiniging.
+      </p>
+
+      <div class="price">
+        €85
+      </div>
     </div>
 
     <div class="card">
       <h3>Compleet binnen + buiten</h3>
-      <p>Volledige reiniging van binnen en buiten.</p>
-      <div class="price">€120</div>
+      <p>
+        Volledige reiniging van
+        binnen en buiten.
+      </p>
+
+      <div class="price">
+        €120
+      </div>
     </div>
 
     <div class="card">
       <h3>SUV</h3>
-      <p>Afhankelijk van de auto en de hoeveelheid vuil.</p>
-      <div class="price">€140 – €150</div>
+      <p>
+        Afhankelijk van de auto
+        en de hoeveelheid vuil.
+      </p>
+
+      <div class="price">
+        €140 – €150
+      </div>
     </div>
 
     <div class="card">
       <h3>Camionetten</h3>
-      <p>Prijs afhankelijk van het voertuig.</p>
-      <div class="price">Op aanvraag</div>
+      <p>
+        Prijs afhankelijk van
+        het voertuig.
+      </p>
+
+      <div class="price">
+        Op aanvraag
+      </div>
     </div>
 
   </div>
+
 </section>
 
+<!-- FOTO'S -->
 <section id="fotos">
+
   <h2>Onze werken</h2>
 
   <div class="gallery">
-    <img src="IMG_9557.jpeg" alt="E.A. Detailing">
-    <img src="IMG_9591.jpeg" alt="E.A. Detailing">
-    <img src="IMG_9593.jpeg" alt="E.A. Detailing">
+
+    <img
+      src="IMG_9557.jpeg"
+      alt="E.A. Detailing auto"
+    >
+
+    <img
+      src="IMG_9591.jpeg"
+      alt="E.A. Detailing auto"
+    >
+
+    <img
+      src="IMG_9593.jpeg"
+      alt="E.A. Detailing auto"
+    >
+
+    <img
+      src="IMG_9595.jpeg"
+      alt="E.A. Detailing auto"
+    >
+
   </div>
+
 </section>
 
+<!-- REVIEWS -->
+<section id="reviews">
+
+  <h2>Reviews van onze klanten</h2>
+
+  <div class="review-info">
+    <p>
+      Tevreden over onze service?
+      Laat ons weten wat u ervan vond.
+    </p>
+  </div>
+
+  <div class="review-box">
+
+    <div class="stars">
+      ★★★★★
+    </div>
+
+    <p>
+      Hier komen onze echte klantenreviews.
+    </p>
+
+    <small>
+      Echte ervaringen van onze klanten
+    </small>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
+
   <div class="contact">
 
     <h2>Contact</h2>
 
     <p>📞 Telefoon</p>
+
     <p>
-      <a href="tel:+32465126389">0465 12 63 89</a>
+      <a href="tel:+32465126389">
+        0465 12 63 89
+      </a>
     </p>
 
     <p>📧 E-mail</p>
+
     <p>
       <a href="mailto:E.A.DETALING@outlook.be">
         E.A.DETALING@outlook.be
@@ -306,23 +452,34 @@
     </p>
 
     <p>🎵 TikTok</p>
+
     <p>
-      <a href="https://www.tiktok.com/@e.a.detaling0" target="_blank">
+      <a
+        href="https://www.tiktok.com/@e.a.detaling0"
+        target="_blank"
+      >
         @e.a.detaling0
       </a>
     </p>
 
     <br>
 
-    <a class="button" href="tel:+32465126389">
+    <a
+      class="button"
+      href="tel:+32465126389"
+    >
       Bel voor een afspraak
     </a>
 
   </div>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
+
   © 2026 E.A. Detailing
+
 </footer>
 
 </body>

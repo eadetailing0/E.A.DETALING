@@ -1,11 +1,10 @@
-<```html
 <!DOCTYPE html>
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>E.A. Detailing</title>
+<title>E.A. Detailing | Professionele Auto Detailing</title>
 
 <style>
 * {
@@ -159,6 +158,12 @@ section h2 {
   padding: 30px;
 }
 
+.review-note {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
 .review-box form {
   display: flex;
   flex-direction: column;
@@ -197,16 +202,6 @@ section h2 {
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-}
-
-.review-box button:hover {
-  opacity: 0.85;
-}
-
-.review-note {
-  text-align: center;
-  color: #aaa;
-  margin-bottom: 20px;
 }
 
 .contact {
@@ -279,15 +274,11 @@ footer {
   <div>
     <h2>Uw auto, als nieuw</h2>
     <p>Professionele reiniging van binnen en buiten.</p>
-
-    <a class="button" href="#contact">
-      Afspraak maken
-    </a>
+    <a class="button" href="#contact">Afspraak maken</a>
   </div>
 </div>
 
 <section id="diensten">
-
   <h2>Onze diensten</h2>
 
   <div class="cards">
@@ -309,15 +300,13 @@ footer {
 
     <div class="card">
       <h3>Camionetten</h3>
-      <p>Voor camionetten maken wij een prijs op aanvraag.</p>
+      <p>Prijs op aanvraag.</p>
     </div>
 
   </div>
-
 </section>
 
 <section id="prijzen">
-
   <h2>Onze prijzen</h2>
 
   <div class="cards">
@@ -336,7 +325,7 @@ footer {
 
     <div class="card">
       <h3>SUV</h3>
-      <p>Prijs hangt af van de auto en de hoeveelheid vuil.</p>
+      <p>Prijs afhankelijk van de auto en de hoeveelheid vuil.</p>
       <div class="price">€140 – €150</div>
     </div>
 
@@ -347,11 +336,9 @@ footer {
     </div>
 
   </div>
-
 </section>
 
 <section id="fotos">
-
   <h2>Onze werken</h2>
 
   <div class="gallery">
@@ -362,7 +349,6 @@ footer {
     <img src="IMG_9595.jpeg" alt="E.A. Detailing">
 
   </div>
-
 </section>
 
 <section id="reviews">
@@ -370,16 +356,22 @@ footer {
   <h2>Laat een review achter</h2>
 
   <p class="review-note">
-    Bent u tevreden over E.A. Detailing?
+    Tevreden over E.A. Detailing?
     Laat uw echte ervaring achter.
   </p>
 
   <div class="review-box">
 
     <form
-      action="https://formspree.io/f/JOUW_FORM_ID"
+      action="https://formspree.io/f/xaewzgrb"
       method="POST"
     >
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="Nieuwe review - E.A. Detailing"
+      >
 
       <label for="naam">Naam</label>
 
@@ -403,25 +395,11 @@ footer {
           Kies uw beoordeling
         </option>
 
-        <option value="5 sterren">
-          ★★★★★
-        </option>
-
-        <option value="4 sterren">
-          ★★★★☆
-        </option>
-
-        <option value="3 sterren">
-          ★★★☆☆
-        </option>
-
-        <option value="2 sterren">
-          ★★☆☆☆
-        </option>
-
-        <option value="1 ster">
-          ★☆☆☆☆
-        </option>
+        <option value="5 sterren">★★★★★</option>
+        <option value="4 sterren">★★★★☆</option>
+        <option value="3 sterren">★★★☆☆</option>
+        <option value="2 sterren">★★☆☆☆</option>
+        <option value="1 ster">★☆☆☆☆</option>
 
       </select>
 
@@ -473,6 +451,7 @@ footer {
       <a
         href="https://www.tiktok.com/@e.a.detaling0"
         target="_blank"
+        rel="noopener"
       >
         @e.a.detaling0
       </a>
@@ -480,10 +459,7 @@ footer {
 
     <br>
 
-    <a
-      class="button"
-      href="tel:+32465126389"
-    >
+    <a class="button" href="tel:+32465126389">
       Bel voor een afspraak
     </a>
 
@@ -497,4 +473,3 @@ footer {
 
 </body>
 </html>
-```

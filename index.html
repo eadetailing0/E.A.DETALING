@@ -1,34 +1,329 @@
-<section id="prijzen">
-  <h2>Prijzen</h2>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E.A. Detailing</title>
 
-  <div class="services">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+    }
+
+    header {
+      background: #000;
+      text-align: center;
+      padding: 30px 15px;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    header h1 {
+      color: #d4af37;
+      font-size: 38px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #ccc;
+      margin-top: 8px;
+    }
+
+    nav {
+      background: #151515;
+      padding: 15px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      min-height: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
+        url("IMG_9557.jpeg") center/cover no-repeat;
+    }
+
+    .hero h2 {
+      color: #d4af37;
+      font-size: 44px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d4af37;
+      color: #000;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      color: #d4af37;
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #181818;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #d4af37;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #333;
+      display: block;
+    }
+
+    .contact {
+      background: #181818;
+      border-radius: 15px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 12px 0;
+    }
+
+    .contact a:not(.button) {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 25px;
+      color: #999;
+      border-top: 2px solid #d4af37;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 29px;
+      }
+
+      .hero {
+        min-height: 430px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      nav a {
+        font-size: 14px;
+        margin: 0 4px;
+      }
+
+      .gallery img {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>E.A. DETAILING</h1>
+  <p>Professionele auto detailing</p>
+</header>
+
+<nav>
+  <a href="#diensten">Diensten</a>
+  <a href="#prijzen">Prijzen</a>
+  <a href="#fotos">Foto's</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <div>
+    <h2>Uw auto, als nieuw</h2>
+    <p>Professionele reiniging van binnen en buiten.</p>
+    <a class="button" href="#contact">Afspraak maken</a>
+  </div>
+</div>
+
+<section id="diensten">
+  <h2>Onze diensten</h2>
+
+  <div class="cards">
 
     <div class="card">
       <h3>Interieurreiniging</h3>
       <p>Grondige reiniging van het interieur.</p>
+    </div>
+
+    <div class="card">
+      <h3>Complete reiniging</h3>
+      <p>Volledige behandeling van binnen en buiten.</p>
+    </div>
+
+    <div class="card">
+      <h3>SUV behandeling</h3>
+      <p>Speciale behandeling voor SUV's en grotere voertuigen.</p>
+    </div>
+
+    <div class="card">
+      <h3>Camionetten</h3>
+      <p>Prijs op aanvraag.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="prijzen">
+  <h2>Prijzen</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Interieur</h3>
+      <p>Volledige interieurreiniging.</p>
       <div class="price">€85</div>
     </div>
 
     <div class="card">
-      <h3>Complete binnen + buiten</h3>
+      <h3>Compleet binnen + buiten</h3>
       <p>Volledige reiniging van binnen en buiten.</p>
       <div class="price">€120</div>
     </div>
 
     <div class="card">
       <h3>SUV</h3>
-      <p>Prijs afhankelijk van het type auto en de vervuiling.</p>
+      <p>Afhankelijk van de auto en de hoeveelheid vuil.</p>
       <div class="price">€140 – €150</div>
     </div>
-<div class="gallery">
 
-
-</div>
     <div class="card">
       <h3>Camionetten</h3>
-      <p>Voor camionetten maken wij een prijs op aanvraag.</p>
-      <div class="price">Prijs op aanvraag</div>
+      <p>Prijs afhankelijk van het voertuig.</p>
+      <div class="price">Op aanvraag</div>
     </div>
 
   </div>
 </section>
+
+<section id="fotos">
+  <h2>Onze werken</h2>
+
+  <div class="gallery">
+    <img src="IMG_9557.jpeg" alt="E.A. Detailing">
+    <img src="IMG_9591.jpeg" alt="E.A. Detailing">
+    <img src="IMG_9593.jpeg" alt="E.A. Detailing">
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+
+    <h2>Contact</h2>
+
+    <p>📞 Telefoon</p>
+    <p>
+      <a href="tel:+32465126389">0465 12 63 89</a>
+    </p>
+
+    <p>📧 E-mail</p>
+    <p>
+      <a href="mailto:E.A.DETALING@outlook.be">
+        E.A.DETALING@outlook.be
+      </a>
+    </p>
+
+    <p>🎵 TikTok</p>
+    <p>
+      <a href="https://www.tiktok.com/@e.a.detaling0" target="_blank">
+        @e.a.detaling0
+      </a>
+    </p>
+
+    <br>
+
+    <a class="button" href="tel:+32465126389">
+      Bel voor een afspraak
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 E.A. Detailing
+</footer>
+
+</body>
+</html>

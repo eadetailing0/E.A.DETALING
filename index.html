@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -11,11 +10,6 @@
 <title>E.A. Detailing | Professionele Auto Detailing</title>
 
 <style>
-
-/* =========================
-   BASIS
-========================= */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,7 +23,7 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #080808;
-  color: #ffffff;
+  color: #fff;
   line-height: 1.6;
 }
 
@@ -44,17 +38,13 @@ a {
   padding: 0 20px;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header {
   background: #050505;
   border-bottom: 1px solid #c9a227;
   padding: 22px 20px;
   text-align: center;
-  position: relative;
-  z-index: 20;
 }
 
 .logo {
@@ -68,22 +58,18 @@ header {
   color: #aaa;
   margin-top: 4px;
   font-size: 14px;
-  letter-spacing: 1px;
 }
 
-/* =========================
-   NAVIGATIE
-========================= */
+/* NAV */
 
 nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(12,12,12,0.97);
+  background: rgba(12,12,12,.97);
   border-bottom: 1px solid #222;
   padding: 13px 10px;
   text-align: center;
-  backdrop-filter: blur(8px);
 }
 
 nav a {
@@ -93,32 +79,26 @@ nav a {
   font-size: 14px;
   font-weight: bold;
   margin: 4px 8px;
-  transition: 0.2s;
 }
 
 nav a:hover {
   color: #d4af37;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
   min-height: 620px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-
   padding: 60px 20px;
 
   background:
     linear-gradient(
-      rgba(0,0,0,0.67),
-      rgba(0,0,0,0.82)
+      rgba(0,0,0,.67),
+      rgba(0,0,0,.82)
     ),
     url("IMG_9557.jpeg") center/cover no-repeat;
 }
@@ -137,7 +117,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: clamp(40px, 7vw, 72px);
+  font-size: clamp(40px,7vw,72px);
   line-height: 1.05;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -169,12 +149,6 @@ nav a:hover {
   color: #000;
   text-decoration: none;
   font-weight: 800;
-  transition: 0.2s;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-  background: #f0cc52;
 }
 
 .button.dark {
@@ -183,13 +157,7 @@ nav a:hover {
   border: 1px solid #555;
 }
 
-.button.dark:hover {
-  background: #222;
-}
-
-/* =========================
-   SECTIES
-========================= */
+/* SECTIONS */
 
 section {
   padding: 80px 0;
@@ -212,27 +180,23 @@ section {
   margin: auto;
 }
 
-/* =========================
-   DIENSTEN
-========================= */
+/* CARDS */
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
 
 .card {
-  background: linear-gradient(145deg, #181818, #101010);
+  background: linear-gradient(145deg,#181818,#101010);
   border: 1px solid #2d2d2d;
   border-radius: 15px;
   padding: 30px 22px;
   text-align: center;
-  transition: 0.25s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
   border-color: #d4af37;
 }
 
@@ -244,20 +208,18 @@ section {
 .card h3 {
   color: #d4af37;
   margin-bottom: 10px;
-  font-size: 20px;
 }
 
 .card p {
   color: #aaa;
 }
 
-/* =========================
-   PRIJZEN
-========================= */
-
-#prijzen {
+#prijzen,
+#afspraak {
   background: #0d0d0d;
 }
+
+/* PRICES */
 
 .price-card {
   position: relative;
@@ -270,13 +232,8 @@ section {
   margin-top: 18px;
 }
 
-.price span {
-  color: #d4af37;
-}
-
 .price-card.highlight {
   border: 2px solid #d4af37;
-  transform: scale(1.02);
 }
 
 .popular {
@@ -293,13 +250,11 @@ section {
   white-space: nowrap;
 }
 
-/* =========================
-   FOTO'S
-========================= */
+/* GALLERY */
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 18px;
 }
 
@@ -308,7 +263,6 @@ section {
   border-radius: 14px;
   border: 1px solid #303030;
   background: #111;
-  cursor: pointer;
 }
 
 .gallery img {
@@ -316,22 +270,12 @@ section {
   height: 300px;
   display: block;
   object-fit: cover;
-  transition: 0.35s;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.06);
-}
+/* FORM */
 
-/* =========================
-   AFSPRAAK
-========================= */
-
-#afspraak {
-  background: #0d0d0d;
-}
-
-.form-box {
+.form-box,
+.review-box {
   max-width: 800px;
   margin: auto;
   background: #171717;
@@ -340,7 +284,8 @@ section {
   padding: 35px;
 }
 
-.form-intro {
+.form-intro,
+.review-note {
   text-align: center;
   color: #aaa;
   margin-bottom: 28px;
@@ -361,15 +306,15 @@ section {
   grid-column: 1 / -1;
 }
 
-.form-group label {
+label {
   color: #d4af37;
   font-weight: bold;
   margin-bottom: 7px;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 14px;
   border: 1px solid #3d3d3d;
@@ -380,18 +325,13 @@ section {
   outline: none;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: #d4af37;
-}
-
-.form-group textarea {
+textarea {
   min-height: 130px;
   resize: vertical;
 }
 
-.submit {
+.submit,
+.review-button {
   width: 100%;
   margin-top: 20px;
   padding: 15px;
@@ -404,28 +344,7 @@ section {
   cursor: pointer;
 }
 
-.submit:hover {
-  background: #f0cc52;
-}
-
-/* =========================
-   REVIEWS
-========================= */
-
-.review-box {
-  max-width: 800px;
-  margin: auto;
-  background: #171717;
-  border: 1px solid #333;
-  border-radius: 18px;
-  padding: 35px;
-}
-
-.review-note {
-  text-align: center;
-  color: #aaa;
-  margin-bottom: 25px;
-}
+/* REVIEWS */
 
 .review-form {
   display: flex;
@@ -433,47 +352,45 @@ section {
   gap: 12px;
 }
 
-.review-form label {
+.review-form textarea {
+  min-height: 140px;
+}
+
+.review-list {
+  margin-top: 45px;
+  display: grid;
+  gap: 18px;
+}
+
+.review-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.review-card h3 {
   color: #d4af37;
+  margin-bottom: 8px;
+}
+
+.review-card p {
+  color: #ddd;
+}
+
+.review-date {
+  color: #777;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.review-message {
+  text-align: center;
+  margin-top: 15px;
   font-weight: bold;
 }
 
-.review-form input,
-.review-form select,
-.review-form textarea {
-  width: 100%;
-  padding: 14px;
-  border-radius: 9px;
-  border: 1px solid #3d3d3d;
-  background: #0d0d0d;
-  color: #fff;
-  font-size: 16px;
-}
-
-.review-form textarea {
-  min-height: 140px;
-  resize: vertical;
-}
-
-.review-form button {
-  padding: 15px;
-  margin-top: 8px;
-  border: none;
-  border-radius: 9px;
-  background: #d4af37;
-  color: #000;
-  font-weight: 900;
-  font-size: 17px;
-  cursor: pointer;
-}
-
-.review-form button:hover {
-  background: #f0cc52;
-}
-
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact-box {
   background:
@@ -527,9 +444,7 @@ section {
   font-size: 17px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
   background: #030303;
@@ -546,9 +461,7 @@ footer {
   margin-bottom: 6px;
 }
 
-/* =========================
-   WHATSAPP
-========================= */
+/* WHATSAPP */
 
 .whatsapp {
   position: fixed;
@@ -563,952 +476,4 @@ footer {
   align-items: center;
   justify-content: center;
 
-  background: #25D366;
-  color: white;
-
-  border-radius: 50%;
-
-  text-decoration: none;
-  font-size: 28px;
-
-  box-shadow: 0 5px 20px rgba(0,0,0,.5);
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-@media (max-width: 650px) {
-
-  header {
-    padding: 18px 10px;
-  }
-
-  .logo {
-    font-size: 27px;
-  }
-
-  nav {
-    padding: 10px 5px;
-  }
-
-  nav a {
-    font-size: 12px;
-    margin: 3px 4px;
-  }
-
-  .hero {
-    min-height: 530px;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
-
-  .hero p {
-    font-size: 17px;
-  }
-
-  section {
-    padding: 60px 0;
-  }
-
-  .section-title h2 {
-    font-size: 30px;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .gallery img {
-    height: 210px;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .form-group.full {
-    grid-column: auto;
-  }
-
-  .form-box,
-  .review-box {
-    padding: 22px;
-  }
-
-  .price-card.highlight {
-    transform: none;
-  }
-
-  .contact-info {
-    flex-direction: column;
-    gap: 18px;
-  }
-
-}
-
-/* =========================
-   VERBORGEN SPAMVELD
-========================= */
-
-.hidden-field {
-  display: none;
-}
-
-</style>
-</head>
-
-<body>
-
-
-<!-- =========================
-     HEADER
-========================= -->
-
-<header>
-
-  <div class="logo">
-    E.A. DETAILING
-  </div>
-
-  <div class="tagline">
-    Professionele auto detailing
-  </div>
-
-</header>
-
-
-<!-- =========================
-     NAVIGATIE
-========================= -->
-
-<nav>
-
-  <a href="#diensten">Diensten</a>
-  <a href="#prijzen">Prijzen</a>
-  <a href="#fotos">Foto's</a>
-  <a href="#afspraak">Afspraak</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#contact">Contact</a>
-
-</nav>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero">
-
-  <div class="hero-content">
-
-    <div class="hero-small">
-      E.A. Detailing
-    </div>
-
-    <h1>
-      Uw auto,<br>
-      <span>als nieuw.</span>
-    </h1>
-
-    <p>
-      Professionele reiniging en detailing van
-      het interieur en exterieur van uw voertuig.
-    </p>
-
-    <div class="buttons">
-
-      <a class="button" href="#afspraak">
-        Afspraak maken
-      </a>
-
-      <a class="button dark" href="#fotos">
-        Bekijk onze werken
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     DIENSTEN
-========================= -->
-
-<section id="diensten">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Onze diensten</h2>
-
-      <p>
-        Wij zorgen ervoor dat uw voertuig weer fris,
-        schoon en verzorgd voor de dag komt.
-      </p>
-
-    </div>
-
-
-    <div class="cards">
-
-
-      <div class="card">
-
-        <div class="icon">🧽</div>
-
-        <h3>
-          Interieurreiniging
-        </h3>
-
-        <p>
-          Grondige reiniging van het interieur
-          van uw auto.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">✨</div>
-
-        <h3>
-          Complete reiniging
-        </h3>
-
-        <p>
-          Volledige behandeling van
-          binnen en buiten.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">🚙</div>
-
-        <h3>
-          SUV behandeling
-        </h3>
-
-        <p>
-          Speciale behandeling voor SUV's
-          en grotere voertuigen.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">🚐</div>
-
-        <h3>
-          Camionetten
-        </h3>
-
-        <p>
-          Behandeling voor camionetten.
-          Prijs op aanvraag.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     PRIJZEN
-========================= -->
-
-<section id="prijzen">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Onze prijzen</h2>
-
-      <p>
-        Transparante prijzen voor een professionele
-        behandeling van uw voertuig.
-      </p>
-
-    </div>
-
-
-    <div class="cards">
-
-
-      <div class="card price-card">
-
-        <div class="icon">🧽</div>
-
-        <h3>
-          Interieur
-        </h3>
-
-        <p>
-          Volledige interieurreiniging.
-        </p>
-
-        <div class="price">
-          €85
-        </div>
-
-      </div>
-
-
-      <div class="card price-card highlight">
-
-        <div class="popular">
-          MEEST GEKOZEN
-        </div>
-
-        <div class="icon">⭐</div>
-
-        <h3>
-          Compleet
-        </h3>
-
-        <p>
-          Volledige reiniging
-          binnen + buiten.
-        </p>
-
-        <div class="price">
-          €120
-        </div>
-
-      </div>
-
-
-      <div class="card price-card">
-
-        <div class="icon">🚙</div>
-
-        <h3>
-          SUV
-        </h3>
-
-        <p>
-          Prijs afhankelijk van
-          voertuig en hoeveelheid vuil.
-        </p>
-
-        <div class="price">
-          €140 – €150
-        </div>
-
-      </div>
-
-
-      <div class="card price-card">
-
-        <div class="icon">🚐</div>
-
-        <h3>
-          Camionetten
-        </h3>
-
-        <p>
-          Prijs afhankelijk van
-          het voertuig.
-        </p>
-
-        <div class="price">
-          Op aanvraag
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FOTO'S
-========================= -->
-
-<section id="fotos">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Onze werken</h2>
-
-      <p>
-        Bekijk enkele van onze behandelingen.
-      </p>
-
-    </div>
-
-
-    <div class="gallery">
-
-
-      <div class="gallery-item">
-
-        <img
-          src="IMG_9557.jpeg"
-          alt="E.A. Detailing auto detailing"
-        >
-
-      </div>
-
-
-      <div class="gallery-item">
-
-        <img
-          src="IMG_9591.jpeg"
-          alt="E.A. Detailing behandeling"
-        >
-
-      </div>
-
-
-      <div class="gallery-item">
-
-        <img
-          src="IMG_9593.jpeg"
-          alt="E.A. Detailing voertuig"
-        >
-
-      </div>
-
-
-      <div class="gallery-item">
-
-        <img
-          src="IMG_9595.jpeg"
-          alt="E.A. Detailing resultaat"
-        >
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     AFSPRAAK
-========================= -->
-
-<section id="afspraak">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Afspraak aanvragen</h2>
-
-      <p>
-        Vul het formulier in en wij nemen zo snel
-        mogelijk contact met u op.
-      </p>
-
-    </div>
-
-
-    <div class="form-box">
-
-      <p class="form-intro">
-        Vul hieronder uw gegevens in.
-      </p>
-
-
-      <form
-        action="https://formspree.io/f/xaewzgrb"
-        method="POST"
-      >
-
-
-        <input
-          type="hidden"
-          name="_subject"
-          value="Nieuwe afspraak aanvraag - E.A. Detailing"
-        >
-
-
-        <div class="form-grid">
-
-
-          <div class="form-group">
-
-            <label for="afspraak-naam">
-              Naam *
-            </label>
-
-            <input
-              type="text"
-              id="afspraak-naam"
-              name="naam"
-              placeholder="Uw naam"
-              required
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="afspraak-telefoon">
-              Telefoon *
-            </label>
-
-            <input
-              type="tel"
-              id="afspraak-telefoon"
-              name="telefoon"
-              placeholder="Uw telefoonnummer"
-              required
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="afspraak-email">
-              E-mail
-            </label>
-
-            <input
-              type="email"
-              id="afspraak-email"
-              name="email"
-              placeholder="Uw e-mailadres"
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="auto">
-              Voertuig
-            </label>
-
-            <input
-              type="text"
-              id="auto"
-              name="voertuig"
-              placeholder="Bijv. BMW 3 Serie"
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="dienst">
-              Gewenste dienst *
-            </label>
-
-            <select
-              id="dienst"
-              name="dienst"
-              required
-            >
-
-              <option value="">
-                Kies een dienst
-              </option>
-
-              <option value="Interieur - €85">
-                Interieur - €85
-              </option>
-
-              <option value="Compleet binnen + buiten - €120">
-                Compleet binnen + buiten - €120
-              </option>
-
-              <option value="SUV - €140 tot €150">
-                SUV - €140 tot €150
-              </option>
-
-              <option value="Camionette - prijs op aanvraag">
-                Camionette - prijs op aanvraag
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="datum">
-              Gewenste datum
-            </label>
-
-            <input
-              type="date"
-              id="datum"
-              name="gewenste_datum"
-            >
-
-          </div>
-
-
-          <div class="form-group full">
-
-            <label for="bericht">
-              Bericht
-            </label>
-
-            <textarea
-              id="bericht"
-              name="bericht"
-              placeholder="Vertel ons iets over uw voertuig of de gewenste behandeling..."
-            ></textarea>
-
-          </div>
-
-
-        </div>
-
-
-        <div class="hidden-field">
-
-          <input
-            type="text"
-            name="_gotcha"
-            tabindex="-1"
-            autocomplete="off"
-          >
-
-        </div>
-
-
-        <button
-          class="submit"
-          type="submit"
-        >
-          📅 Afspraak aanvragen
-        </button>
-
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     REVIEWS
-========================= -->
-
-<section id="reviews">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Laat een review achter</h2>
-
-      <p>
-        Tevreden over E.A. Detailing?
-        Deel uw ervaring met ons.
-      </p>
-
-    </div>
-
-
-    <div class="review-box">
-
-      <p class="review-note">
-        Uw beoordeling wordt naar E.A. Detailing
-        verzonden via ons reviewformulier.
-      </p>
-
-
-      <form
-        class="review-form"
-        action="https://formspree.io/f/xaewzgrb"
-        method="POST"
-      >
-
-
-        <input
-          type="hidden"
-          name="_subject"
-          value="Nieuwe review - E.A. Detailing"
-        >
-
-
-        <label for="review-naam">
-          Naam *
-        </label>
-
-        <input
-          type="text"
-          id="review-naam"
-          name="naam"
-          placeholder="Uw naam"
-          required
-        >
-
-
-        <label for="review-email">
-          E-mail
-        </label>
-
-        <input
-          type="email"
-          id="review-email"
-          name="email"
-          placeholder="Uw e-mailadres"
-        >
-
-
-        <label for="sterren">
-          Beoordeling *
-        </label>
-
-        <select
-          id="sterren"
-          name="beoordeling"
-          required
-        >
-
-          <option value="">
-            Kies uw beoordeling
-          </option>
-
-          <option value="5 sterren">
-            ★★★★★ - Uitstekend
-          </option>
-
-          <option value="4 sterren">
-            ★★★★☆ - Zeer goed
-          </option>
-
-          <option value="3 sterren">
-            ★★★☆☆ - Goed
-          </option>
-
-          <option value="2 sterren">
-            ★★☆☆☆ - Matig
-          </option>
-
-          <option value="1 ster">
-            ★☆☆☆☆ - Slecht
-          </option>
-
-        </select>
-
-
-        <label for="review">
-          Uw review *
-        </label>
-
-        <textarea
-          id="review"
-          name="review"
-          placeholder="Schrijf hier uw ervaring..."
-          required
-        ></textarea>
-
-
-        <div class="hidden-field">
-
-          <input
-            type="text"
-            name="_gotcha"
-            tabindex="-1"
-            autocomplete="off"
-          >
-
-        </div>
-
-
-        <button type="submit">
-          ⭐ Review versturen
-        </button>
-
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section id="contact">
-
-  <div class="container">
-
-    <div class="contact-box">
-
-      <h2>Contacteer ons</h2>
-
-      <p>
-        Klaar om uw auto weer als nieuw te laten
-        uitzien? Neem vandaag contact met ons op.
-      </p>
-
-
-      <div class="contact-info">
-
-
-        <div class="contact-item">
-
-          <strong>
-            Telefoon
-          </strong>
-
-          <a href="tel:+32465126389">
-            0465 12 63 89
-          </a>
-
-        </div>
-
-
-        <div class="contact-item">
-
-          <strong>
-            E-mail
-          </strong>
-
-          <a href="mailto:E.A.DETALING@outlook.be">
-            E.A.DETALING@outlook.be
-          </a>
-
-        </div>
-
-
-        <div class="contact-item">
-
-          <strong>
-            TikTok
-          </strong>
-
-          <a
-            href="https://www.tiktok.com/@e.a.detaling0"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @e.a.detaling0
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="buttons">
-
-        <a
-          class="button"
-          href="tel:+32465126389"
-        >
-          📞 Bel voor een afspraak
-        </a>
-
-
-        <a
-          class="button dark"
-          href="https://www.tiktok.com/@e.a.detaling0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          🎵 Bekijk TikTok
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-  <div class="footer-title">
-    E.A. DETAILING
-  </div>
-
-  <p>
-    Professionele auto detailing
-  </p>
-
-  <p>
-    © 2026 E.A. Detailing. Alle rechten voorbehouden.
-  </p>
-
-</footer>
-
-
-<!-- =========================
-     WHATSAPP
-========================= -->
-
-<a
-  class="whatsapp"
-  href="https://wa.me/32465126389?text=Hallo%20E.A.%20Detailing,%20ik%20wil%20graag%20een%20afspraak%20maken."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Contact via WhatsApp"
->
-  💬
-</a>
-
-
-</body>
-</html>
-```
+  background:

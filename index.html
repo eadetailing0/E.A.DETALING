@@ -3,49 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>E.A. Detailing | Professionele Auto Detailing</title>
+
 <style>
 *{
   box-sizing:border-box;
   margin:0;
   padding:0;
 }
+
 html{
   scroll-behavior:smooth;
 }
+
 body{
   font-family:Arial,Helvetica,sans-serif;
   background:#070707;
   color:#fff;
   line-height:1.6;
 }
+
 a{
   color:inherit;
 }
+
 .container{
   width:100%;
   max-width:1150px;
   margin:auto;
   padding:0 20px;
 }
-/* HEADER */
+
 header{
   background:#050505;
   padding:22px 15px;
   text-align:center;
   border-bottom:2px solid #d4af37;
 }
+
 .logo{
   font-size:36px;
   font-weight:900;
   letter-spacing:4px;
   color:#d4af37;
 }
+
 .tagline{
   color:#aaa;
   margin-top:3px;
 }
-/* NAV */
+
 nav{
   position:sticky;
   top:0;
@@ -55,6 +63,7 @@ nav{
   padding:12px 5px;
   text-align:center;
 }
+
 nav a{
   display:inline-block;
   text-decoration:none;
@@ -62,12 +71,12 @@ nav a{
   font-size:14px;
   margin:4px 8px;
   color:#fff;
-  transition:.2s;
 }
+
 nav a:hover{
   color:#d4af37;
 }
-/* HERO */
+
 .hero{
   min-height:680px;
   display:flex;
@@ -75,6 +84,7 @@ nav a:hover{
   justify-content:center;
   text-align:center;
   padding:70px 20px;
+
   background:
     linear-gradient(
       rgba(0,0,0,.45),
@@ -82,9 +92,11 @@ nav a:hover{
     ),
     url("IMG_9557.jpeg") center/cover no-repeat;
 }
+
 .hero-content{
   max-width:900px;
 }
+
 .hero-small{
   color:#d4af37;
   font-weight:900;
@@ -92,21 +104,25 @@ nav a:hover{
   font-size:15px;
   margin-bottom:18px;
 }
+
 .hero h1{
   font-size:clamp(45px,8vw,78px);
   line-height:1;
   text-transform:uppercase;
   margin-bottom:22px;
 }
+
 .hero h1 span{
   color:#d4af37;
 }
+
 .hero p{
   color:#ddd;
   font-size:20px;
   max-width:720px;
   margin:0 auto 32px;
 }
+
 .buttons{
   display:flex;
   justify-content:center;
@@ -114,6 +130,7 @@ nav a:hover{
   gap:12px;
   flex-wrap:wrap;
 }
+
 .button{
   display:inline-block;
   padding:15px 25px;
@@ -124,42 +141,48 @@ nav a:hover{
   font-weight:900;
   transition:.2s;
 }
+
 .button:hover{
   transform:translateY(-2px);
-  box-shadow:0 8px 25px rgba(212,175,55,.25);
 }
+
 .button.dark{
   background:#111;
   color:#fff;
   border:1px solid #555;
 }
-/* SECTIONS */
+
 section{
   padding:80px 0;
 }
+
 section:nth-of-type(even){
   background:#0c0c0c;
 }
+
 .section-title{
   text-align:center;
   margin-bottom:45px;
 }
+
 .section-title h2{
   color:#d4af37;
   font-size:38px;
   margin-bottom:10px;
 }
+
 .section-title p{
   color:#999;
   max-width:700px;
   margin:auto;
 }
-/* DIENSTEN */
+
 .cards{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:20px;
 }
+
 .card{
   background:#141414;
   border:1px solid #333;
@@ -168,30 +191,35 @@ section:nth-of-type(even){
   text-align:center;
   transition:.25s;
 }
+
 .card:hover{
   transform:translateY(-5px);
   border-color:#d4af37;
 }
+
 .icon{
   font-size:42px;
   margin-bottom:14px;
 }
+
 .card h3{
   color:#d4af37;
   margin-bottom:10px;
   font-size:20px;
 }
+
 .card p{
   color:#aaa;
 }
-/* PRIJZEN */
+
 .price-card{
   position:relative;
 }
+
 .price-card.highlight{
   border:2px solid #d4af37;
-  box-shadow:0 0 25px rgba(212,175,55,.12);
 }
+
 .popular{
   position:absolute;
   top:-14px;
@@ -205,24 +233,27 @@ section:nth-of-type(even){
   font-weight:900;
   white-space:nowrap;
 }
+
 .price{
   margin-top:18px;
   color:#fff;
   font-size:29px;
   font-weight:900;
 }
-/* FOTO'S */
+
 .gallery{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:18px;
 }
+
 .gallery-item{
   overflow:hidden;
   border-radius:15px;
   border:1px solid #333;
   background:#111;
 }
+
 .gallery img{
   width:100%;
   height:300px;
@@ -230,10 +261,11 @@ section:nth-of-type(even){
   display:block;
   transition:.4s;
 }
+
 .gallery-item:hover img{
   transform:scale(1.05);
 }
-/* FORMULIER */
+
 .form-box,
 .review-box{
   max-width:850px;
@@ -243,23 +275,28 @@ section:nth-of-type(even){
   border-radius:18px;
   padding:35px;
 }
+
 .form-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:18px;
 }
+
 .form-group{
   display:flex;
   flex-direction:column;
 }
+
 .form-group.full{
   grid-column:1/-1;
 }
+
 label{
   color:#d4af37;
   font-weight:bold;
   margin-bottom:7px;
 }
+
 input,
 select,
 textarea{
@@ -272,15 +309,18 @@ textarea{
   font-size:16px;
   outline:none;
 }
+
 input:focus,
 select:focus,
 textarea:focus{
   border-color:#d4af37;
 }
+
 textarea{
   min-height:130px;
   resize:vertical;
 }
+
 .submit,
 .review-button{
   width:100%;
@@ -294,48 +334,59 @@ textarea{
   font-weight:900;
   cursor:pointer;
 }
+
 /* REVIEWS */
+
 .review-form{
   display:flex;
   flex-direction:column;
   gap:12px;
 }
+
 .stars{
   display:flex;
   justify-content:center;
   gap:7px;
   margin:5px 0;
 }
+
 .star{
   font-size:38px;
   color:#444;
   cursor:pointer;
   transition:.15s;
 }
+
 .star:hover,
 .star.active{
   color:#d4af37;
 }
+
 .rating-text{
   text-align:center;
   color:#aaa;
   font-size:14px;
 }
+
 .message{
   text-align:center;
   margin-top:15px;
   font-weight:bold;
 }
+
 .success{
   color:#7cff9b;
 }
+
 .error{
   color:#ff7777;
 }
+
 .review-list{
   max-width:850px;
   margin:40px auto 0;
 }
+
 .review-card{
   background:#111;
   border:1px solid #333;
@@ -343,26 +394,30 @@ textarea{
   padding:23px;
   margin-bottom:18px;
 }
+
 .review-card h3{
   color:#d4af37;
   font-size:20px;
   margin-bottom:5px;
 }
+
 .review-stars{
   color:#d4af37;
   font-size:21px;
   letter-spacing:2px;
   margin-bottom:9px;
 }
+
 .review-card p{
   color:#ddd;
 }
+
 .review-date{
   color:#777;
   font-size:13px;
   margin-top:10px;
 }
-/* CONTACT */
+
 .contact-box{
   background:
     linear-gradient(
@@ -370,20 +425,24 @@ textarea{
       rgba(0,0,0,.90)
     ),
     url("IMG_9591.jpeg") center/cover no-repeat;
+
   border:1px solid #333;
   border-radius:20px;
   padding:60px 25px;
   text-align:center;
 }
+
 .contact-box h2{
   color:#d4af37;
   font-size:40px;
   margin-bottom:12px;
 }
+
 .contact-box > p{
   color:#bbb;
   margin-bottom:30px;
 }
+
 .contact-info{
   display:flex;
   justify-content:center;
@@ -391,21 +450,24 @@ textarea{
   flex-wrap:wrap;
   margin-bottom:32px;
 }
+
 .contact-item{
   display:flex;
   flex-direction:column;
 }
+
 .contact-item strong{
   color:#aaa;
   font-size:13px;
 }
+
 .contact-item a{
   color:#d4af37;
   text-decoration:none;
   font-weight:bold;
   font-size:17px;
 }
-/* FOOTER */
+
 footer{
   background:#030303;
   border-top:2px solid #d4af37;
@@ -413,13 +475,14 @@ footer{
   padding:32px 20px;
   color:#777;
 }
+
 .footer-title{
   color:#d4af37;
   font-weight:bold;
   letter-spacing:3px;
   margin-bottom:5px;
 }
-/* WHATSAPP */
+
 .whatsapp{
   position:fixed;
   right:18px;
@@ -437,80 +500,103 @@ footer{
   z-index:9999;
   box-shadow:0 5px 25px rgba(0,0,0,.5);
 }
-/* MOBILE */
+
 @media(max-width:900px){
+
   .cards{
     grid-template-columns:repeat(2,1fr);
   }
+
   .gallery{
     grid-template-columns:repeat(2,1fr);
   }
 }
+
 @media(max-width:650px){
+
   header{
     padding:19px 10px;
   }
+
   .logo{
     font-size:27px;
     letter-spacing:3px;
   }
+
   .tagline{
     font-size:13px;
   }
+
   nav{
     padding:10px 3px;
   }
+
   nav a{
     font-size:12px;
     margin:3px 4px;
   }
+
   .hero{
     min-height:560px;
     padding:55px 18px;
   }
+
   .hero-small{
     font-size:12px;
     letter-spacing:3px;
   }
+
   .hero h1{
     font-size:42px;
   }
+
   .hero p{
     font-size:17px;
   }
+
   section{
     padding:60px 0;
   }
+
   .section-title h2{
     font-size:31px;
   }
+
   .cards{
     grid-template-columns:1fr;
   }
+
   .gallery{
     grid-template-columns:1fr 1fr;
     gap:10px;
   }
+
   .gallery img{
     height:210px;
   }
+
   .form-grid{
     grid-template-columns:1fr;
   }
+
   .form-group.full{
     grid-column:auto;
   }
+
   .form-box,
   .review-box{
     padding:22px;
   }
+
   .contact-info{
     flex-direction:column;
     gap:18px;
   }
+
   .contact-box h2{
     font-size:32px;
   }
+
   .whatsapp{
     width:55px;
     height:55px;
@@ -520,15 +606,14 @@ footer{
 }
 </style>
 </head>
+
 <body>
+
 <header>
-  <div class="logo">
-    E.A. DETAILING
-  </div>
-  <div class="tagline">
-    Professionele auto detailing
-  </div>
+  <div class="logo">E.A. DETAILING</div>
+  <div class="tagline">Professionele auto detailing</div>
 </header>
+
 <nav>
   <a href="#diensten">Diensten</a>
   <a href="#prijzen">Prijzen</a>
@@ -537,40 +622,59 @@ footer{
   <a href="#reviews">Reviews</a>
   <a href="#contact">Contact</a>
 </nav>
+
 <section class="hero">
+
   <div class="hero-content">
+
     <div class="hero-small">
       E.A. DETAILING
     </div>
+
     <h1>
       UW AUTO,<br>
       <span>ALS NIEUW.</span>
     </h1>
+
     <p>
       Professionele reiniging en detailing
       van het interieur en exterieur van uw voertuig.
     </p>
+
     <div class="buttons">
+
       <a class="button" href="#afspraak">
         📅 Afspraak maken
       </a>
+
       <a class="button dark" href="#fotos">
         📸 Onze werken
       </a>
+
     </div>
+
   </div>
+
 </section>
+
 <section id="diensten">
+
 <div class="container">
+
 <div class="section-title">
+
 <h2>Onze diensten</h2>
+
 <p>
 Van personenwagens tot SUV's en camionetten.
 Wij zorgen ervoor dat uw voertuig weer fris,
 schoon en verzorgd is.
 </p>
+
 </div>
+
 <div class="cards">
+
 <div class="card">
 <div class="icon">🧽</div>
 <h3>Interieurreiniging</h3>
@@ -579,6 +683,7 @@ Grondige reiniging van het interieur,
 zetels, vloer en verschillende oppervlakken.
 </p>
 </div>
+
 <div class="card">
 <div class="icon">✨</div>
 <h3>Complete reiniging</h3>
@@ -587,6 +692,7 @@ Volledige behandeling van binnen
 én buiten voor een frisse uitstraling.
 </p>
 </div>
+
 <div class="card">
 <div class="icon">🚙</div>
 <h3>SUV behandeling</h3>
@@ -595,6 +701,7 @@ Speciale behandeling voor SUV's
 en grotere voertuigen.
 </p>
 </div>
+
 <div class="card">
 <div class="icon">🚐</div>
 <h3>Camionetten</h3>
@@ -603,111 +710,174 @@ Ook camionetten zijn welkom.
 Prijs afhankelijk van het voertuig.
 </p>
 </div>
+
 </div>
 </div>
+
 </section>
+
 <section id="prijzen">
+
 <div class="container">
+
 <div class="section-title">
+
 <h2>Onze prijzen</h2>
+
 <p>
 Duidelijke prijzen voor een professionele behandeling.
 </p>
+
 </div>
+
 <div class="cards">
+
 <div class="card price-card">
+
 <div class="icon">🧽</div>
+
 <h3>Interieur</h3>
+
 <p>
 Volledige interieurreiniging.
 </p>
+
 <div class="price">
 €85
 </div>
+
 </div>
+
 <div class="card price-card highlight">
+
 <div class="popular">
 MEEST GEKOZEN
 </div>
+
 <div class="icon">✨</div>
+
 <h3>Compleet</h3>
+
 <p>
 Volledige reiniging binnen + buiten.
 </p>
+
 <div class="price">
 €120
 </div>
+
 </div>
+
 <div class="card price-card">
+
 <div class="icon">🚙</div>
+
 <h3>SUV</h3>
+
 <p>
 Prijs afhankelijk van voertuig en vervuiling.
 </p>
+
 <div class="price">
 €140 – €150
 </div>
+
 </div>
+
 <div class="card price-card">
+
 <div class="icon">🚐</div>
+
 <h3>Camionetten</h3>
+
 <p>
 Prijs afhankelijk van type en grootte.
 </p>
+
 <div class="price">
 Op aanvraag
 </div>
+
+</div>
+
 </div>
 </div>
-</div>
+
 </section>
+
 <section id="fotos">
+
 <div class="container">
+
 <div class="section-title">
+
 <h2>Onze werken</h2>
+
 <p>
 Een kijkje naar enkele voertuigen die wij behandelen.
 </p>
+
 </div>
+
 <div class="gallery">
+
 <div class="gallery-item">
-<img src="IMG_9557.jpeg" alt="E.A. Detailing auto detailing">
+<img src="IMG_9557.jpeg" alt="E.A. Detailing auto">
 </div>
+
 <div class="gallery-item">
 <img src="IMG_9591.jpeg" alt="E.A. Detailing resultaat">
 </div>
+
 <div class="gallery-item">
 <img src="IMG_9593.jpeg" alt="E.A. Detailing voertuig">
 </div>
+
 <div class="gallery-item">
 <img src="IMG_9595.jpeg" alt="E.A. Detailing behandeling">
 </div>
+
 </div>
+
 </div>
+
 </section>
+
 <section id="afspraak">
+
 <div class="container">
+
 <div class="section-title">
+
 <h2>Afspraak aanvragen</h2>
+
 <p>
 Vul uw gegevens in en wij nemen zo snel mogelijk contact met u op.
 </p>
+
 </div>
+
 <div class="form-box">
+
 <form
 action="https://formspree.io/f/xaewzgrb"
 method="POST"
 >
+
 <input
 type="hidden"
 name="_subject"
 value="Nieuwe afspraak - E.A. Detailing"
 >
+
 <div class="form-grid">
+
 <div class="form-group">
+
 <label for="naam">
 Naam *
 </label>
+
 <input
 id="naam"
 type="text"
@@ -715,11 +885,15 @@ name="naam"
 placeholder="Uw naam"
 required
 >
+
 </div>
+
 <div class="form-group">
+
 <label for="telefoon">
 Telefoon *
 </label>
+
 <input
 id="telefoon"
 type="tel"
@@ -727,102 +901,145 @@ name="telefoon"
 placeholder="Uw telefoonnummer"
 required
 >
+
 </div>
+
 <div class="form-group">
+
 <label for="email">
 E-mail
 </label>
+
 <input
 id="email"
 type="email"
 name="email"
 placeholder="Uw e-mailadres"
 >
+
 </div>
+
 <div class="form-group">
+
 <label for="voertuig">
 Voertuig
 </label>
+
 <input
 id="voertuig"
 type="text"
 name="voertuig"
 placeholder="Bijv. BMW 3 Serie"
 >
+
 </div>
+
 <div class="form-group">
+
 <label for="dienst">
 Gewenste dienst *
 </label>
+
 <select
 id="dienst"
 name="dienst"
 required
 >
+
 <option value="">
 Kies een dienst
 </option>
+
 <option value="Interieur - €85">
 Interieur - €85
 </option>
+
 <option value="Compleet binnen + buiten - €120">
 Compleet binnen + buiten - €120
 </option>
+
 <option value="SUV - €140 tot €150">
 SUV - €140 tot €150
 </option>
+
 <option value="Camionette - prijs op aanvraag">
 Camionette - prijs op aanvraag
 </option>
+
 </select>
+
 </div>
+
 <div class="form-group">
+
 <label for="datum">
 Gewenste datum
 </label>
+
 <input
 id="datum"
 type="date"
 name="gewenste_datum"
 >
+
 </div>
+
 <div class="form-group full">
+
 <label for="bericht">
 Bericht
 </label>
+
 <textarea
 id="bericht"
 name="bericht"
 placeholder="Vertel iets over uw voertuig..."
 ></textarea>
+
 </div>
+
 </div>
+
 <button
 class="submit"
 type="submit"
 >
 📅 Afspraak aanvragen
 </button>
+
 </form>
+
 </div>
+
 </div>
+
 </section>
+
 <section id="reviews">
+
 <div class="container">
+
 <div class="section-title">
+
 <h2>⭐ Reviews van onze klanten</h2>
+
 <p>
 Tevreden geweest? Laat ook uw ervaring achter.
 </p>
+
 </div>
+
 <div class="review-box">
+
 <form
 id="reviewForm"
 class="review-form"
 >
+
 <label for="reviewNaam">
 Naam *
 </label>
+
 <input
 id="reviewNaam"
 type="text"
@@ -830,83 +1047,114 @@ placeholder="Uw naam"
 maxlength="100"
 required
 >
+
 <label>
 Beoordeling *
 </label>
+
 <div
 id="stars"
 class="stars"
 >
+
 <span class="star" data-rating="1">★</span>
 <span class="star" data-rating="2">★</span>
 <span class="star" data-rating="3">★</span>
 <span class="star" data-rating="4">★</span>
 <span class="star" data-rating="5">★</span>
+
 </div>
+
 <div
 id="ratingText"
 class="rating-text"
 >
 Kies een beoordeling
 </div>
+
 <label for="reviewTekst">
 Uw review *
 </label>
+
 <textarea
 id="reviewTekst"
 placeholder="Schrijf hier uw ervaring..."
 maxlength="1000"
 required
 ></textarea>
+
 <button
 class="review-button"
 type="submit"
 >
 ⭐ Review plaatsen
 </button>
+
 </form>
+
 <div
 id="reviewMessage"
 class="message"
 ></div>
+
 </div>
+
 <div
 id="reviewList"
 class="review-list"
 ></div>
+
 </div>
+
 </section>
+
 <section id="contact">
+
 <div class="container">
+
 <div class="contact-box">
+
 <h2>
 Contacteer ons
 </h2>
+
 <p>
 Klaar om uw auto weer fris en verzorgd te maken?
 Neem vandaag contact met ons op.
 </p>
+
 <div class="contact-info">
+
 <div class="contact-item">
+
 <strong>
 TELEFOON
 </strong>
+
 <a href="tel:+32465126389">
 0465 12 63 89
 </a>
+
 </div>
+
 <div class="contact-item">
+
 <strong>
 E-MAIL
 </strong>
+
 <a href="mailto:E.A.DETALING@outlook.be">
 E.A.DETALING@outlook.be
 </a>
+
 </div>
+
 <div class="contact-item">
+
 <strong>
 TIKTOK
 </strong>
+
 <a
 href="https://www.tiktok.com/@e.a.detaling0"
 target="_blank"
@@ -914,15 +1162,20 @@ rel="noopener"
 >
 @e.a.detaling0
 </a>
+
 </div>
+
 </div>
+
 <div class="buttons">
+
 <a
 class="button"
 href="tel:+32465126389"
 >
 📞 Bel voor een afspraak
 </a>
+
 <a
 class="button dark"
 href="https://www.tiktok.com/@e.a.detaling0"
@@ -931,21 +1184,31 @@ rel="noopener"
 >
 🎵 TikTok
 </a>
+
 </div>
+
 </div>
+
 </div>
+
 </section>
+
 <footer>
+
 <div class="footer-title">
 E.A. DETAILING
 </div>
+
 <p>
 Professionele auto detailing
 </p>
+
 <p>
 © 2026 E.A. Detailing
 </p>
+
 </footer>
+
 <a
 class="whatsapp"
 href="https://wa.me/32465126389?text=Hallo%20E.A.%20Detailing,%20ik%20wil%20graag%20een%20afspraak%20maken."
@@ -955,105 +1218,149 @@ aria-label="WhatsApp E.A. Detailing"
 >
 💬
 </a>
-<!-- =========================
+
+
+<!-- =====================================================
      SUPABASE REVIEWS
-========================= -->
+===================================================== -->
+
 <script type="module">
+
 import { createClient }
 from "https://esm.sh/@supabase/supabase-js@2";
+
 const SUPABASE_URL =
 "https://hsijihzkfyfnhlofknzz.supabase.co";
+
 const SUPABASE_KEY =
 "sb_publishable_vPNX4SQ51jxn8Bv8Tg0WXA_u5aym9nw";
+
 const supabase = createClient(
   SUPABASE_URL,
   SUPABASE_KEY
 );
+
 let selectedRating = 0;
+
 const stars =
 document.querySelectorAll(".star");
+
 const ratingText =
 document.getElementById("ratingText");
+
 const reviewForm =
 document.getElementById("reviewForm");
+
 const reviewList =
 document.getElementById("reviewList");
+
 const reviewMessage =
 document.getElementById("reviewMessage");
-/* =========================
-   STERREN
-========================= */
+
+
+/* STERREN */
+
 stars.forEach(star => {
+
   star.addEventListener("click", () => {
+
     selectedRating =
       Number(star.dataset.rating);
+
     stars.forEach(s => {
+
       s.classList.toggle(
         "active",
         Number(s.dataset.rating) <= selectedRating
       );
+
     });
+
     ratingText.textContent =
       selectedRating + " van 5 sterren";
+
   });
+
 });
-/* =========================
-   MELDING
-========================= */
-function showMessage(text, type = "") {
-  reviewMessage.textContent = text;
+
+
+/* MELDING */
+
+function showMessage(text,type=""){
+
+  reviewMessage.textContent =
+    text;
+
   reviewMessage.className =
     "message " + type;
+
 }
-/* =========================
-   DATUM
-========================= */
-function formatDate(value) {
-  if (!value) return "";
-  return new Date(value)
-    .toLocaleDateString("nl-BE");
-}
-/* =========================
-   REVIEWS LADEN
-========================= */
-async function loadReviews() {
+
+
+/* REVIEWS LADEN */
+
+async function loadReviews(){
+
   reviewList.innerHTML =
     "<p style='text-align:center;color:#888;'>⭐ Reviews laden...</p>";
-  const { data, error } =
-    await supabase
-      .from("reviews")
-      .select("name, rating, review, created_at")
-      .order("created_at", {
-        ascending:false
-      });
-  if (error) {
+
+  const {
+    data,
+    error
+  } = await supabase
+    .from("reviews")
+    .select("name, rating, review, created_at")
+    .order(
+      "created_at",
+      { ascending:false }
+    );
+
+  if(error){
+
     console.error(
       "SUPABASE SELECT ERROR:",
       error
     );
+
     reviewList.innerHTML =
       "<p class='error' style='text-align:center;'>❌ Reviews konden niet worden geladen.</p>";
+
     return;
   }
-  if (!data || data.length === 0) {
+
+  if(!data || data.length === 0){
+
     reviewList.innerHTML =
       "<p style='text-align:center;color:#888;'>⭐ Nog geen reviews. Wees de eerste!</p>";
+
     return;
   }
+
   reviewList.innerHTML = "";
+
   data.forEach(item => {
+
     const card =
       document.createElement("div");
+
     card.className =
       "review-card";
+
+
     const name =
       document.createElement("h3");
+
     name.textContent =
       item.name || "Klant";
+
+
     const starsBox =
       document.createElement("div");
+
     starsBox.className =
       "review-stars";
+
+
     const rating =
       Math.max(
         0,
@@ -1062,78 +1369,129 @@ async function loadReviews() {
           Number(item.rating) || 0
         )
       );
+
+
     starsBox.textContent =
       "★".repeat(rating) +
-      "☆".repeat(5 - rating);
+      "☆".repeat(5-rating);
+
+
     const text =
       document.createElement("p");
+
     text.textContent =
       item.review || "";
+
+
     const date =
       document.createElement("div");
+
     date.className =
       "review-date";
-    date.textContent =
-      formatDate(item.created_at);
+
+
+    if(item.created_at){
+
+      date.textContent =
+        new Date(
+          item.created_at
+        ).toLocaleDateString(
+          "nl-BE"
+        );
+
+    }
+
+
     card.append(
       name,
       starsBox,
       text,
       date
     );
+
+
     reviewList.appendChild(card);
+
   });
+
 }
-/* =========================
-   REVIEW VERSTUREN
-========================= */
+
+
+/* REVIEW VERSTUREN */
+
 reviewForm.addEventListener(
   "submit",
   async event => {
+
     event.preventDefault();
+
+
     const naam =
       document
         .getElementById("reviewNaam")
         .value
         .trim();
+
+
     const review =
       document
         .getElementById("reviewTekst")
         .value
         .trim();
-    if (!naam || !review) {
+
+
+    if(!naam || !review){
+
       showMessage(
-        "Vul alle verplichte velden in.",
+        "Vul je naam en review in.",
         "error"
       );
+
       return;
     }
-    if (
+
+
+    if(
       selectedRating < 1 ||
       selectedRating > 5
-    ) {
+    ){
+
       showMessage(
-        "Kies eerst een beoordeling.",
+        "Kies eerst het aantal sterren.",
         "error"
       );
+
       return;
     }
+
+
     showMessage(
       "Review wordt geplaatst..."
     );
-    const { error } =
-      await supabase
-        .from("reviews")
-        .insert({
-          name: naam,
-          rating: selectedRating,
-          review: review
-        });
-    if (error) {
+
+
+    const {
+      error
+    } = await supabase
+      .from("reviews")
+      .insert({
+
+        name: naam,
+
+        rating: selectedRating,
+
+        review: review
+
+      });
+
+
+    if(error){
+
       console.error(
         "SUPABASE INSERT ERROR:",
         error
       );
+
       showMessage(
         "❌ " +
         (
@@ -1142,26 +1500,47 @@ reviewForm.addEventListener(
         ),
         "error"
       );
+
       return;
     }
+
+
     showMessage(
-      "✅ Bedankt! Je review staat nu op de website.",
+      "✅ Bedankt! Je review is geplaatst.",
       "success"
     );
+
+
     reviewForm.reset();
+
+
     selectedRating = 0;
+
+
     stars.forEach(star => {
-      star.classList.remove("active");
+
+      star.classList.remove(
+        "active"
+      );
+
     });
+
+
     ratingText.textContent =
       "Kies een beoordeling";
+
+
     await loadReviews();
+
   }
 );
-/* =========================
-   START
-========================= */
+
+
+/* START */
+
 loadReviews();
+
 </script>
+
 </body>
 </html>

@@ -24,10 +24,6 @@ body{
   line-height:1.6;
 }
 
-a{
-  color:inherit;
-}
-
 .container{
   width:100%;
   max-width:1150px;
@@ -51,26 +47,24 @@ header{
 
 .tagline{
   color:#aaa;
-  margin-top:3px;
 }
 
 nav{
   position:sticky;
   top:0;
   z-index:1000;
-  background:rgba(10,10,10,.97);
+  background:#0a0a0a;
   border-bottom:1px solid #333;
-  padding:12px 5px;
+  padding:12px;
   text-align:center;
 }
 
 nav a{
-  display:inline-block;
+  color:#fff;
   text-decoration:none;
   font-weight:bold;
   font-size:14px;
   margin:4px 8px;
-  color:#fff;
 }
 
 nav a:hover{
@@ -84,12 +78,8 @@ nav a:hover{
   justify-content:center;
   text-align:center;
   padding:70px 20px;
-
   background:
-    linear-gradient(
-      rgba(0,0,0,.45),
-      rgba(0,0,0,.88)
-    ),
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.88)),
     url("IMG_9557.jpeg") center/cover no-repeat;
 }
 
@@ -101,14 +91,12 @@ nav a:hover{
   color:#d4af37;
   font-weight:900;
   letter-spacing:5px;
-  font-size:15px;
   margin-bottom:18px;
 }
 
 .hero h1{
   font-size:clamp(45px,8vw,78px);
   line-height:1;
-  text-transform:uppercase;
   margin-bottom:22px;
 }
 
@@ -126,7 +114,6 @@ nav a:hover{
 .buttons{
   display:flex;
   justify-content:center;
-  align-items:center;
   gap:12px;
   flex-wrap:wrap;
 }
@@ -139,11 +126,6 @@ nav a:hover{
   color:#000;
   text-decoration:none;
   font-weight:900;
-  transition:.2s;
-}
-
-.button:hover{
-  transform:translateY(-2px);
 }
 
 .button.dark{
@@ -189,11 +171,9 @@ section:nth-of-type(even){
   border-radius:16px;
   padding:30px 22px;
   text-align:center;
-  transition:.25s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
   border-color:#d4af37;
 }
 
@@ -205,11 +185,16 @@ section:nth-of-type(even){
 .card h3{
   color:#d4af37;
   margin-bottom:10px;
-  font-size:20px;
 }
 
 .card p{
   color:#aaa;
+}
+
+.price{
+  margin-top:18px;
+  font-size:29px;
+  font-weight:900;
 }
 
 .price-card{
@@ -231,14 +216,6 @@ section:nth-of-type(even){
   border-radius:20px;
   font-size:11px;
   font-weight:900;
-  white-space:nowrap;
-}
-
-.price{
-  margin-top:18px;
-  color:#fff;
-  font-size:29px;
-  font-weight:900;
 }
 
 .gallery{
@@ -251,7 +228,6 @@ section:nth-of-type(even){
   overflow:hidden;
   border-radius:15px;
   border:1px solid #333;
-  background:#111;
 }
 
 .gallery img{
@@ -259,11 +235,6 @@ section:nth-of-type(even){
   height:300px;
   object-fit:cover;
   display:block;
-  transition:.4s;
-}
-
-.gallery-item:hover img{
-  transform:scale(1.05);
 }
 
 .form-box,
@@ -310,12 +281,6 @@ textarea{
   outline:none;
 }
 
-input:focus,
-select:focus,
-textarea:focus{
-  border-color:#d4af37;
-}
-
 textarea{
   min-height:130px;
   resize:vertical;
@@ -335,8 +300,6 @@ textarea{
   cursor:pointer;
 }
 
-/* REVIEWS */
-
 .review-form{
   display:flex;
   flex-direction:column;
@@ -354,10 +317,8 @@ textarea{
   font-size:38px;
   color:#444;
   cursor:pointer;
-  transition:.15s;
 }
 
-.star:hover,
 .star.active{
   color:#d4af37;
 }
@@ -365,7 +326,6 @@ textarea{
 .rating-text{
   text-align:center;
   color:#aaa;
-  font-size:14px;
 }
 
 .message{
@@ -397,7 +357,6 @@ textarea{
 
 .review-card h3{
   color:#d4af37;
-  font-size:20px;
   margin-bottom:5px;
 }
 
@@ -420,12 +379,8 @@ textarea{
 
 .contact-box{
   background:
-    linear-gradient(
-      rgba(0,0,0,.70),
-      rgba(0,0,0,.90)
-    ),
+    linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.90)),
     url("IMG_9591.jpeg") center/cover no-repeat;
-
   border:1px solid #333;
   border-radius:20px;
   padding:60px 25px;
@@ -438,7 +393,7 @@ textarea{
   margin-bottom:12px;
 }
 
-.contact-box > p{
+.contact-box p{
   color:#bbb;
   margin-bottom:30px;
 }
@@ -465,7 +420,6 @@ textarea{
   color:#d4af37;
   text-decoration:none;
   font-weight:bold;
-  font-size:17px;
 }
 
 footer{
@@ -480,7 +434,6 @@ footer{
   color:#d4af37;
   font-weight:bold;
   letter-spacing:3px;
-  margin-bottom:5px;
 }
 
 .whatsapp{
@@ -498,11 +451,9 @@ footer{
   text-decoration:none;
   font-size:29px;
   z-index:9999;
-  box-shadow:0 5px 25px rgba(0,0,0,.5);
 }
 
 @media(max-width:900px){
-
   .cards{
     grid-template-columns:repeat(2,1fr);
   }
@@ -514,21 +465,8 @@ footer{
 
 @media(max-width:650px){
 
-  header{
-    padding:19px 10px;
-  }
-
   .logo{
     font-size:27px;
-    letter-spacing:3px;
-  }
-
-  .tagline{
-    font-size:13px;
-  }
-
-  nav{
-    padding:10px 3px;
   }
 
   nav a{
@@ -538,12 +476,6 @@ footer{
 
   .hero{
     min-height:560px;
-    padding:55px 18px;
-  }
-
-  .hero-small{
-    font-size:12px;
-    letter-spacing:3px;
   }
 
   .hero h1{
@@ -556,10 +488,6 @@ footer{
 
   section{
     padding:60px 0;
-  }
-
-  .section-title h2{
-    font-size:31px;
   }
 
   .cards{
@@ -592,17 +520,6 @@ footer{
     flex-direction:column;
     gap:18px;
   }
-
-  .contact-box h2{
-    font-size:32px;
-  }
-
-  .whatsapp{
-    width:55px;
-    height:55px;
-    right:15px;
-    bottom:15px;
-  }
 }
 </style>
 </head>
@@ -624,7 +541,6 @@ footer{
 </nav>
 
 <section class="hero">
-
   <div class="hero-content">
 
     <div class="hero-small">
@@ -642,7 +558,6 @@ footer{
     </p>
 
     <div class="buttons">
-
       <a class="button" href="#afspraak">
         📅 Afspraak maken
       </a>
@@ -650,27 +565,21 @@ footer{
       <a class="button dark" href="#fotos">
         📸 Onze werken
       </a>
-
     </div>
 
   </div>
-
 </section>
 
 <section id="diensten">
-
 <div class="container">
 
 <div class="section-title">
-
 <h2>Onze diensten</h2>
-
 <p>
 Van personenwagens tot SUV's en camionetten.
 Wij zorgen ervoor dat uw voertuig weer fris,
 schoon en verzorgd is.
 </p>
-
 </div>
 
 <div class="cards">
@@ -680,7 +589,7 @@ schoon en verzorgd is.
 <h3>Interieurreiniging</h3>
 <p>
 Grondige reiniging van het interieur,
-zetels, vloer en verschillende oppervlakken.
+zetels, vloer en oppervlakken.
 </p>
 </div>
 
@@ -689,7 +598,7 @@ zetels, vloer en verschillende oppervlakken.
 <h3>Complete reiniging</h3>
 <p>
 Volledige behandeling van binnen
-én buiten voor een frisse uitstraling.
+én buiten.
 </p>
 </div>
 
@@ -713,116 +622,63 @@ Prijs afhankelijk van het voertuig.
 
 </div>
 </div>
-
 </section>
 
 <section id="prijzen">
-
 <div class="container">
 
 <div class="section-title">
-
 <h2>Onze prijzen</h2>
-
-<p>
-Duidelijke prijzen voor een professionele behandeling.
-</p>
-
+<p>Duidelijke prijzen voor een professionele behandeling.</p>
 </div>
 
 <div class="cards">
 
 <div class="card price-card">
-
 <div class="icon">🧽</div>
-
 <h3>Interieur</h3>
-
-<p>
-Volledige interieurreiniging.
-</p>
-
-<div class="price">
-€85
-</div>
-
+<p>Volledige interieurreiniging.</p>
+<div class="price">€85</div>
 </div>
 
 <div class="card price-card highlight">
-
-<div class="popular">
-MEEST GEKOZEN
-</div>
-
+<div class="popular">MEEST GEKOZEN</div>
 <div class="icon">✨</div>
-
 <h3>Compleet</h3>
-
-<p>
-Volledige reiniging binnen + buiten.
-</p>
-
-<div class="price">
-€120
-</div>
-
+<p>Volledige reiniging binnen + buiten.</p>
+<div class="price">€120</div>
 </div>
 
 <div class="card price-card">
-
 <div class="icon">🚙</div>
-
 <h3>SUV</h3>
-
-<p>
-Prijs afhankelijk van voertuig en vervuiling.
-</p>
-
-<div class="price">
-€140 – €150
-</div>
-
+<p>Prijs afhankelijk van voertuig en vervuiling.</p>
+<div class="price">€140 – €150</div>
 </div>
 
 <div class="card price-card">
-
 <div class="icon">🚐</div>
-
 <h3>Camionetten</h3>
-
-<p>
-Prijs afhankelijk van type en grootte.
-</p>
-
-<div class="price">
-Op aanvraag
-</div>
-
+<p>Prijs afhankelijk van type en grootte.</p>
+<div class="price">Op aanvraag</div>
 </div>
 
 </div>
 </div>
-
 </section>
 
 <section id="fotos">
-
 <div class="container">
 
 <div class="section-title">
-
 <h2>Onze werken</h2>
-
-<p>
-Een kijkje naar enkele voertuigen die wij behandelen.
-</p>
-
+<p>Een kijkje naar enkele voertuigen die wij behandelen.</p>
 </div>
 
 <div class="gallery">
 
 <div class="gallery-item">
-<img src="IMG_9557.jpeg" alt="E.A. Detailing auto">
+<img src="IMG_9557.jpeg" alt="E.A. Detailing">
 </div>
 
 <div class="gallery-item">
@@ -838,23 +694,17 @@ Een kijkje naar enkele voertuigen die wij behandelen.
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 <section id="afspraak">
-
 <div class="container">
 
 <div class="section-title">
-
 <h2>Afspraak aanvragen</h2>
-
 <p>
 Vul uw gegevens in en wij nemen zo snel mogelijk contact met u op.
 </p>
-
 </div>
 
 <div class="form-box">
@@ -873,125 +723,81 @@ value="Nieuwe afspraak - E.A. Detailing"
 <div class="form-grid">
 
 <div class="form-group">
-
-<label for="naam">
-Naam *
-</label>
-
+<label>Naam *</label>
 <input
-id="naam"
 type="text"
 name="naam"
 placeholder="Uw naam"
 required
 >
-
 </div>
 
 <div class="form-group">
-
-<label for="telefoon">
-Telefoon *
-</label>
-
+<label>Telefoon *</label>
 <input
-id="telefoon"
 type="tel"
 name="telefoon"
 placeholder="Uw telefoonnummer"
 required
 >
-
 </div>
 
 <div class="form-group">
-
-<label for="email">
-E-mail
-</label>
-
+<label>E-mail</label>
 <input
-id="email"
 type="email"
 name="email"
 placeholder="Uw e-mailadres"
 >
-
 </div>
 
 <div class="form-group">
-
-<label for="voertuig">
-Voertuig
-</label>
-
+<label>Voertuig</label>
 <input
-id="voertuig"
 type="text"
 name="voertuig"
 placeholder="Bijv. BMW 3 Serie"
 >
-
 </div>
 
 <div class="form-group">
+<label>Gewenste dienst *</label>
 
-<label for="dienst">
-Gewenste dienst *
-</label>
+<select name="dienst" required>
 
-<select
-id="dienst"
-name="dienst"
-required
->
-
-<option value="">
-Kies een dienst
-</option>
+<option value="">Kies een dienst</option>
 
 <option value="Interieur - €85">
 Interieur - €85
 </option>
 
-<option value="Compleet binnen + buiten - €120">
-Compleet binnen + buiten - €120
+<option value="Compleet - €120">
+Compleet - €120
 </option>
 
 <option value="SUV - €140 tot €150">
 SUV - €140 tot €150
 </option>
 
-<option value="Camionette - prijs op aanvraag">
+<option value="Camionette">
 Camionette - prijs op aanvraag
 </option>
 
 </select>
-
 </div>
 
 <div class="form-group">
-
-<label for="datum">
-Gewenste datum
-</label>
-
+<label>Gewenste datum</label>
 <input
-id="datum"
 type="date"
 name="gewenste_datum"
 >
-
 </div>
 
 <div class="form-group full">
-
-<label for="bericht">
-Bericht
-</label>
+<label>Bericht</label>
 
 <textarea
-id="bericht"
 name="bericht"
 placeholder="Vertel iets over uw voertuig..."
 ></textarea>
@@ -1000,19 +806,14 @@ placeholder="Vertel iets over uw voertuig..."
 
 </div>
 
-<button
-class="submit"
-type="submit"
->
+<button class="submit" type="submit">
 📅 Afspraak aanvragen
 </button>
 
 </form>
 
 </div>
-
 </div>
-
 </section>
 
 <section id="reviews">
@@ -1031,10 +832,7 @@ Tevreden geweest? Laat ook uw ervaring achter.
 
 <div class="review-box">
 
-<form
-id="reviewForm"
-class="review-form"
->
+<form id="reviewForm" class="review-form">
 
 <label for="reviewNaam">
 Naam *
@@ -1052,10 +850,7 @@ required
 Beoordeling *
 </label>
 
-<div
-id="stars"
-class="stars"
->
+<div id="stars" class="stars">
 
 <span class="star" data-rating="1">★</span>
 <span class="star" data-rating="2">★</span>
@@ -1065,10 +860,7 @@ class="stars"
 
 </div>
 
-<div
-id="ratingText"
-class="rating-text"
->
+<div id="ratingText" class="rating-text">
 Kies een beoordeling
 </div>
 
@@ -1092,17 +884,11 @@ type="submit"
 
 </form>
 
-<div
-id="reviewMessage"
-class="message"
-></div>
+<div id="reviewMessage" class="message"></div>
 
 </div>
 
-<div
-id="reviewList"
-class="review-list"
-></div>
+<div id="reviewList" class="review-list"></div>
 
 </div>
 
@@ -1114,9 +900,7 @@ class="review-list"
 
 <div class="contact-box">
 
-<h2>
-Contacteer ons
-</h2>
+<h2>Contacteer ons</h2>
 
 <p>
 Klaar om uw auto weer fris en verzorgd te maken?
@@ -1126,35 +910,21 @@ Neem vandaag contact met ons op.
 <div class="contact-info">
 
 <div class="contact-item">
-
-<strong>
-TELEFOON
-</strong>
-
+<strong>TELEFOON</strong>
 <a href="tel:+32465126389">
 0465 12 63 89
 </a>
-
 </div>
 
 <div class="contact-item">
-
-<strong>
-E-MAIL
-</strong>
-
+<strong>E-MAIL</strong>
 <a href="mailto:E.A.DETALING@outlook.be">
 E.A.DETALING@outlook.be
 </a>
-
 </div>
 
 <div class="contact-item">
-
-<strong>
-TIKTOK
-</strong>
-
+<strong>TIKTOK</strong>
 <a
 href="https://www.tiktok.com/@e.a.detaling0"
 target="_blank"
@@ -1162,7 +932,6 @@ rel="noopener"
 >
 @e.a.detaling0
 </a>
-
 </div>
 
 </div>
@@ -1188,9 +957,7 @@ rel="noopener"
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 <footer>
@@ -1199,13 +966,9 @@ rel="noopener"
 E.A. DETAILING
 </div>
 
-<p>
-Professionele auto detailing
-</p>
+<p>Professionele auto detailing</p>
 
-<p>
-© 2026 E.A. Detailing
-</p>
+<p>© 2026 E.A. Detailing</p>
 
 </footer>
 
@@ -1214,7 +977,6 @@ class="whatsapp"
 href="https://wa.me/32465126389?text=Hallo%20E.A.%20Detailing,%20ik%20wil%20graag%20een%20afspraak%20maken."
 target="_blank"
 rel="noopener"
-aria-label="WhatsApp E.A. Detailing"
 >
 💬
 </a>
@@ -1229,18 +991,24 @@ aria-label="WhatsApp E.A. Detailing"
 import { createClient }
 from "https://esm.sh/@supabase/supabase-js@2";
 
+
 const SUPABASE_URL =
 "https://hsijihzkfyfnhlofknzz.supabase.co";
+
 
 const SUPABASE_KEY =
 "sb_publishable_vPNX4SQ51jxn8Bv8Tg0WXA_u5aym9nw";
 
-const supabase = createClient(
+
+const supabase =
+createClient(
   SUPABASE_URL,
   SUPABASE_KEY
 );
 
+
 let selectedRating = 0;
+
 
 const stars =
 document.querySelectorAll(".star");
@@ -1286,7 +1054,10 @@ stars.forEach(star => {
 
 /* MELDING */
 
-function showMessage(text,type=""){
+function showMessage(
+  text,
+  type = ""
+){
 
   reviewMessage.textContent =
     text;
@@ -1304,16 +1075,20 @@ async function loadReviews(){
   reviewList.innerHTML =
     "<p style='text-align:center;color:#888;'>⭐ Reviews laden...</p>";
 
+
   const {
     data,
     error
   } = await supabase
     .from("reviews")
-    .select("name, rating, review, created_at")
+    .select(
+      "customer_name, customer_rating, customer_review, created_at"
+    )
     .order(
       "created_at",
       { ascending:false }
     );
+
 
   if(error){
 
@@ -1326,17 +1101,26 @@ async function loadReviews(){
       "<p class='error' style='text-align:center;'>❌ Reviews konden niet worden geladen.</p>";
 
     return;
+
   }
 
-  if(!data || data.length === 0){
+
+  if(
+    !data ||
+    data.length === 0
+  ){
 
     reviewList.innerHTML =
       "<p style='text-align:center;color:#888;'>⭐ Nog geen reviews. Wees de eerste!</p>";
 
     return;
+
   }
 
-  reviewList.innerHTML = "";
+
+  reviewList.innerHTML =
+    "";
+
 
   data.forEach(item => {
 
@@ -1351,7 +1135,8 @@ async function loadReviews(){
       document.createElement("h3");
 
     name.textContent =
-      item.name || "Klant";
+      item.customer_name ||
+      "Klant";
 
 
     const starsBox =
@@ -1363,10 +1148,10 @@ async function loadReviews(){
 
     const rating =
       Math.max(
-        0,
+        1,
         Math.min(
           5,
-          Number(item.rating) || 0
+          Number(item.customer_rating) || 1
         )
       );
 
@@ -1380,7 +1165,8 @@ async function loadReviews(){
       document.createElement("p");
 
     text.textContent =
-      item.review || "";
+      item.customer_review ||
+      "";
 
 
     const date =
@@ -1410,14 +1196,16 @@ async function loadReviews(){
     );
 
 
-    reviewList.appendChild(card);
+    reviewList.appendChild(
+      card
+    );
 
   });
 
 }
 
 
-/* REVIEW VERSTUREN */
+/* REVIEW PLAATSEN */
 
 reviewForm.addEventListener(
   "submit",
@@ -1440,7 +1228,10 @@ reviewForm.addEventListener(
         .trim();
 
 
-    if(!naam || !review){
+    if(
+      !naam ||
+      !review
+    ){
 
       showMessage(
         "Vul je naam en review in.",
@@ -1448,6 +1239,7 @@ reviewForm.addEventListener(
       );
 
       return;
+
     }
 
 
@@ -1457,11 +1249,12 @@ reviewForm.addEventListener(
     ){
 
       showMessage(
-        "Kies eerst het aantal sterren.",
+        "Kies eerst een beoordeling.",
         "error"
       );
 
       return;
+
     }
 
 
@@ -1476,11 +1269,14 @@ reviewForm.addEventListener(
       .from("reviews")
       .insert({
 
-        name: naam,
+        customer_name:
+          naam,
 
-        rating: selectedRating,
+        customer_rating:
+          selectedRating,
 
-        review: review
+        customer_review:
+          review
 
       });
 
@@ -1494,14 +1290,12 @@ reviewForm.addEventListener(
 
       showMessage(
         "❌ " +
-        (
-          error.message ||
-          "Er ging iets mis."
-        ),
+        error.message,
         "error"
       );
 
       return;
+
     }
 
 
@@ -1514,7 +1308,8 @@ reviewForm.addEventListener(
     reviewForm.reset();
 
 
-    selectedRating = 0;
+    selectedRating =
+      0;
 
 
     stars.forEach(star => {

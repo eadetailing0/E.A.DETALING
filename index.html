@@ -9,7 +9,6 @@
 <title>E.A. Detailing | Professionele Auto Detailing</title>
 
 <style>
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,8 +37,6 @@ a {
   padding: 0 20px;
 }
 
-/* HEADER */
-
 header {
   background: #050505;
   border-bottom: 1px solid #d4af37;
@@ -58,8 +55,6 @@ header {
   color: #aaa;
   margin-top: 5px;
 }
-
-/* NAV */
 
 nav {
   position: sticky;
@@ -83,8 +78,6 @@ nav a {
 nav a:hover {
   color: #d4af37;
 }
-
-/* HERO */
 
 .hero {
   min-height: 620px;
@@ -154,8 +147,6 @@ nav a:hover {
   border: 1px solid #555;
 }
 
-/* SECTIONS */
-
 section {
   padding: 80px 0;
 }
@@ -176,8 +167,6 @@ section {
   max-width: 650px;
   margin: auto;
 }
-
-/* CARDS */
 
 .cards {
   display: grid;
@@ -210,8 +199,6 @@ section {
 .card p {
   color: #aaa;
 }
-
-/* PRIJZEN */
 
 #prijzen,
 #afspraak {
@@ -247,8 +234,6 @@ section {
   white-space: nowrap;
 }
 
-/* FOTO'S */
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -267,8 +252,6 @@ section {
   object-fit: cover;
   display: block;
 }
-
-/* FORMULIER */
 
 .form-box,
 .review-box {
@@ -339,12 +322,35 @@ textarea {
   cursor: pointer;
 }
 
-/* REVIEWS */
-
 .review-form {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.star {
+  font-size: 35px;
+  color: #555;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.star:hover,
+.star.active {
+  color: #d4af37;
+}
+
+.rating-text {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
 }
 
 .review-list {
@@ -369,6 +375,12 @@ textarea {
   color: #ddd;
 }
 
+.review-stars {
+  color: #d4af37;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
 .review-date {
   color: #777;
   font-size: 13px;
@@ -380,8 +392,6 @@ textarea {
   margin-top: 15px;
   font-weight: bold;
 }
-
-/* CONTACT */
 
 .contact-box {
   background:
@@ -433,8 +443,6 @@ textarea {
   font-size: 17px;
 }
 
-/* FOOTER */
-
 footer {
   background: #030303;
   border-top: 1px solid #d4af37;
@@ -449,8 +457,6 @@ footer {
   letter-spacing: 2px;
   margin-bottom: 6px;
 }
-
-/* WHATSAPP */
 
 .whatsapp {
   position: fixed;
@@ -468,8 +474,6 @@ footer {
   font-size: 28px;
   z-index: 999;
 }
-
-/* MOBIEL */
 
 @media (max-width: 900px) {
 
@@ -542,37 +546,26 @@ footer {
   }
 
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-
-  <div class="logo">
-    E.A. DETAILING
-  </div>
-
-  <div class="tagline">
-    Professionele auto detailing
-  </div>
-
+  <div class="logo">E.A. DETAILING</div>
+  <div class="tagline">Professionele auto detailing</div>
 </header>
 
 <nav>
-
   <a href="#diensten">Diensten</a>
   <a href="#prijzen">Prijzen</a>
   <a href="#fotos">Foto's</a>
   <a href="#afspraak">Afspraak</a>
   <a href="#reviews">Reviews</a>
   <a href="#contact">Contact</a>
-
 </nav>
 
 <section class="hero">
-
   <div class="hero-content">
 
     <div class="hero-small">
@@ -602,7 +595,6 @@ footer {
     </div>
 
   </div>
-
 </section>
 
 <section id="diensten">
@@ -610,14 +602,12 @@ footer {
   <div class="container">
 
     <div class="section-title">
-
       <h2>Onze diensten</h2>
 
       <p>
         Wij zorgen ervoor dat uw voertuig weer
         fris, schoon en verzorgd voor de dag komt.
       </p>
-
     </div>
 
     <div class="cards">
@@ -625,6 +615,7 @@ footer {
       <div class="card">
         <div class="icon">🧽</div>
         <h3>Interieurreiniging</h3>
+
         <p>
           Grondige reiniging van het interieur
           van uw auto.
@@ -633,7 +624,9 @@ footer {
 
       <div class="card">
         <div class="icon">✨</div>
+
         <h3>Complete reiniging</h3>
+
         <p>
           Volledige behandeling van binnen
           en buiten.
@@ -642,7 +635,9 @@ footer {
 
       <div class="card">
         <div class="icon">🚙</div>
+
         <h3>SUV behandeling</h3>
+
         <p>
           Speciale behandeling voor SUV's
           en grotere voertuigen.
@@ -651,7 +646,9 @@ footer {
 
       <div class="card">
         <div class="icon">🚐</div>
+
         <h3>Camionetten</h3>
+
         <p>
           Behandeling voor camionetten.
           Prijs op aanvraag.
@@ -659,9 +656,7 @@ footer {
       </div>
 
     </div>
-
   </div>
-
 </section>
 
 <section id="prijzen">
@@ -772,31 +767,19 @@ footer {
     <div class="gallery">
 
       <div class="gallery-item">
-        <img
-          src="IMG_9557.jpeg"
-          alt="E.A. Detailing"
-        >
+        <img src="IMG_9557.jpeg" alt="E.A. Detailing">
       </div>
 
       <div class="gallery-item">
-        <img
-          src="IMG_9591.jpeg"
-          alt="E.A. Detailing"
-        >
+        <img src="IMG_9591.jpeg" alt="E.A. Detailing">
       </div>
 
       <div class="gallery-item">
-        <img
-          src="IMG_9593.jpeg"
-          alt="E.A. Detailing"
-        >
+        <img src="IMG_9593.jpeg" alt="E.A. Detailing">
       </div>
 
       <div class="gallery-item">
-        <img
-          src="IMG_9595.jpeg"
-          alt="E.A. Detailing"
-        >
+        <img src="IMG_9595.jpeg" alt="E.A. Detailing">
       </div>
 
     </div>
@@ -990,6 +973,30 @@ footer {
           required
         >
 
+        <label>
+          Beoordeling *
+        </label>
+
+        <div
+          id="stars"
+          class="stars"
+        >
+
+          <span class="star" data-rating="1">★</span>
+          <span class="star" data-rating="2">★</span>
+          <span class="star" data-rating="3">★</span>
+          <span class="star" data-rating="4">★</span>
+          <span class="star" data-rating="5">★</span>
+
+        </div>
+
+        <div
+          id="ratingText"
+          class="rating-text"
+        >
+          Kies een beoordeling
+        </div>
+
         <label for="reviewTekst">
           Uw review *
         </label>
@@ -1004,7 +1011,7 @@ footer {
           class="review-button"
           type="submit"
         >
-          Review versturen
+          ⭐ Review versturen
         </button>
 
       </form>
@@ -1135,36 +1142,85 @@ const supabaseUrl =
 const supabaseKey =
   "sb_publishable_vPNX4SQ51jxn8Bv8Tg0WXA_u5aym9nw";
 
-const supabase = createClient(
-  supabaseUrl,
-  supabaseKey
-);
+const supabase =
+  createClient(
+    supabaseUrl,
+    supabaseKey
+  );
 
 
-/* REVIEWS LADEN */
+/* =========================
+   STERREN
+========================= */
+
+let selectedRating = 0;
+
+const stars =
+  document.querySelectorAll(".star");
+
+const ratingText =
+  document.getElementById("ratingText");
+
+stars.forEach(star => {
+
+  star.addEventListener("click", () => {
+
+    selectedRating =
+      Number(star.dataset.rating);
+
+    stars.forEach(s => {
+
+      const rating =
+        Number(s.dataset.rating);
+
+      s.classList.toggle(
+        "active",
+        rating <= selectedRating
+      );
+
+    });
+
+    ratingText.textContent =
+      selectedRating + " van 5 sterren";
+
+  });
+
+});
+
+
+/* =========================
+   REVIEWS LADEN
+========================= */
 
 async function loadReviews() {
 
   const list =
     document.getElementById("reviewList");
 
-  list.innerHTML = "Reviews laden...";
+  list.innerHTML =
+    "<p style='text-align:center;color:#888;'>Reviews laden...</p>";
 
-  const { data, error } =
+  const {
+    data,
+    error
+  } =
     await supabase
       .from("reviews")
-      .select("naam, review, created_at")
-      .eq("goedgekeurd", true)
+      .select('"Name", review, rating, created_at')
+      .eq("approved", true)
       .order("created_at", {
         ascending: false
       });
 
   if (error) {
 
-    list.innerHTML =
-      "<p>Reviews konden niet worden geladen.</p>";
+    console.error(
+      "Reviews laden:",
+      error
+    );
 
-    console.error(error);
+    list.innerHTML =
+      "<p style='text-align:center;color:#888;'>Reviews konden niet worden geladen.</p>";
 
     return;
   }
@@ -1172,7 +1228,7 @@ async function loadReviews() {
   if (!data || data.length === 0) {
 
     list.innerHTML =
-      "<p style='text-align:center;color:#888;'>Nog geen reviews.</p>";
+      "<p style='text-align:center;color:#888;'>Nog geen goedgekeurde reviews.</p>";
 
     return;
   }
@@ -1184,13 +1240,30 @@ async function loadReviews() {
     const card =
       document.createElement("div");
 
-    card.className = "review-card";
+    card.className =
+      "review-card";
+
 
     const name =
       document.createElement("h3");
 
     name.textContent =
-      item.naam;
+      item.Name || "Klant";
+
+
+    const starsBox =
+      document.createElement("div");
+
+    starsBox.className =
+      "review-stars";
+
+    const rating =
+      Number(item.rating) || 0;
+
+    starsBox.textContent =
+      "★".repeat(rating) +
+      "☆".repeat(5 - rating);
+
 
     const text =
       document.createElement("p");
@@ -1198,16 +1271,27 @@ async function loadReviews() {
     text.textContent =
       item.review;
 
+
     const date =
       document.createElement("div");
 
-    date.className = "review-date";
+    date.className =
+      "review-date";
 
-    date.textContent =
-      new Date(item.created_at)
-        .toLocaleDateString("nl-BE");
+    if (item.created_at) {
+
+      date.textContent =
+        new Date(
+          item.created_at
+        ).toLocaleDateString(
+          "nl-BE"
+        );
+
+    }
+
 
     card.appendChild(name);
+    card.appendChild(starsBox);
     card.appendChild(text);
     card.appendChild(date);
 
@@ -1218,72 +1302,127 @@ async function loadReviews() {
 }
 
 
-/* REVIEW VERSTUREN */
+/* =========================
+   REVIEW VERSTUREN
+========================= */
 
 document
   .getElementById("reviewForm")
-  .addEventListener("submit", async function(event) {
+  .addEventListener(
+    "submit",
+    async function(event) {
 
-    event.preventDefault();
+      event.preventDefault();
 
-    const naam =
-      document
-        .getElementById("reviewNaam")
-        .value
-        .trim();
+      const naam =
+        document
+          .getElementById("reviewNaam")
+          .value
+          .trim();
 
-    const review =
-      document
-        .getElementById("reviewTekst")
-        .value
-        .trim();
+      const review =
+        document
+          .getElementById("reviewTekst")
+          .value
+          .trim();
 
-    const message =
-      document.getElementById("reviewMessage");
+      const message =
+        document
+          .getElementById("reviewMessage");
 
-    if (!naam || !review) {
+
+      if (!naam || !review) {
+
+        message.textContent =
+          "Vul alle verplichte velden in.";
+
+        return;
+
+      }
+
+
+      if (selectedRating < 1) {
+
+        message.textContent =
+          "Kies eerst een beoordeling van 1 tot 5 sterren.";
+
+        return;
+
+      }
+
 
       message.textContent =
-        "Vul alle verplichte velden in.";
+        "Review wordt verstuurd...";
 
-      return;
-    }
 
-    message.textContent =
-      "Review wordt verstuurd...";
+      const {
+        error
+      } =
+        await supabase
+          .from("reviews")
+          .insert([
+            {
 
-    const { error } =
-      await supabase
-        .from("reviews")
-        .insert([
-          {
-            naam: naam,
-            review: review,
-            goedgekeurd: false
-          }
-        ]);
+              Name: naam,
 
-    if (error) {
+              review: review,
 
-      console.error(error);
+              rating:
+                selectedRating,
+
+              approved:
+                false
+
+            }
+          ]);
+
+
+      if (error) {
+
+        console.error(
+          "Review versturen:",
+          error
+        );
+
+        message.textContent =
+          "Er ging iets mis. Controleer de Supabase-instellingen.";
+
+        return;
+
+      }
+
 
       message.textContent =
-        "Er ging iets mis. Probeer opnieuw.";
+        "✅ Bedankt! Je review is ontvangen en wordt eerst gecontroleerd.";
 
-      return;
+
+      document
+        .getElementById("reviewForm")
+        .reset();
+
+
+      selectedRating = 0;
+
+
+      stars.forEach(star => {
+
+        star.classList.remove(
+          "active"
+        );
+
+      });
+
+
+      ratingText.textContent =
+        "Kies een beoordeling";
+
     }
-
-    message.textContent =
-      "✅ Bedankt! Je review wordt eerst gecontroleerd.";
-
-    document
-      .getElementById("reviewForm")
-      .reset();
-
-  });
+  );
 
 
-/* START */
+/* =========================
+   START
+========================= */
 
 loadReviews();
 
